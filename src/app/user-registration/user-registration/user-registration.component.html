@@ -1,0 +1,11 @@
+<ng-container [formGroup]="userForm">
+  <app-basic-info formGroupName="basicInfo"></app-basic-info>
+
+  <app-address formGroupName="address"></app-address>
+
+  <app-colors formArrayName="colors"></app-colors>
+</ng-container>
+
+<pre style="margin-top:50px; border: 1px solid red; width: fit-content">
+    {{ userForm.value | json }}
+</pre>
